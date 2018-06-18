@@ -13,10 +13,15 @@
 	background-color: #070330;
 }
 
-#one {
+#blurb {
+	background-color: yellow;
+}
+
+p {
 	font-family: Helvetica;
 	margin: 40px;
 	text-indent: 50px;
+	font-size: 18px;
 }
 
 body {
@@ -29,6 +34,27 @@ h2 {
 	background-color: #FFFFFF;
 }
 
+h3 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #86F767;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+}
+
 </style>
 
 <body>
@@ -36,15 +62,30 @@ h2 {
 	<h1>Kinematics</h1>
 </div>
 
-<div id = "one">
-<p><font size="4">Kinematics is the study of motion. In Kinematics, there are many terms that refer to properties of motion, including distance, time, speed, etc. When referring to these properties, it is important to distinguish between <span style="color:#FF0000;">vector</span> and <span style="color:#009900;">scalar</span> properties. A <span style="color:#009900;">scalar</span> property is one that has magnitude, but not direction. A <span style="color:#FF0000;">vector</span> has a direction <i>and</i> a magnitude. For example, distance is a <span style="color:#009900;">scalar</span> property, but displacement is a <span style="color:#FF0000;">vector</span> property. This can be confusing, since they both use the same unit (the meter).</font></p>
+<p>Kinematics is the study of motion. In Kinematics, there are many terms that refer to properties of motion, including distance, time, speed, etc. When referring to these properties, it is important to distinguish between <span style="color:#FF0000;">vector</span> and <span style="color:#009900;">scalar</span> properties. A <span style="color:#009900;">scalar</span> property is one that has magnitude, but not direction. A <span style="color:#FF0000;">vector</span> has a direction <i>and</i> a magnitude. For example, distance is a <span style="color:#009900;">scalar</span> property, but displacement is a <span style="color:#FF0000;">vector</span> property. This can be confusing, since they both use the same unit (the meter).</p>
 </div>
 
-<h2>Distance vs. Displacement</h2>
+<h2><span style="color:#009900;">Distance</span> vs. <span style="color:#FF0000;">Displacement</span></h2>
 
-<p>Let's say you walk 10 meters to the right, and then walk 10 meters to the left. How far have you traveled? If we're talking about distance, you have traveled 20 meters. If we're talking about displacement, you have been displaced 0 meters. Since distance is a scalar quantity, it simply represents the <i>net amount of meters you've traveled</i>. However, displacement is vector valued. This means that direction matters, so displacement represents the distance between where you started, and where you ended up.</p>
+<p>Let's say you walk 10 meters to the right, and then walk 10 meters to the left. How far have you traveled? If we're talking about <span style="color:#009900;">distance</span>, you have traveled 20 meters. If we're talking about <span style="color:#FF0000;">displacement</span>, you have been displaced 0 meters. Since <span style="color:#009900;">distance</span> is a <span style="color:#009900;">scalar</span> quantity, it simply represents the <i>net amount of meters you've traveled</i>. However, <span style="color:#FF0000;">displacement</span> is <span style="color:#FF0000;">vector</span> valued. This means that direction matters, so <span style="color:#FF0000;">displacement</span> represents the <span style="color:#009900;">distance</span> between where you started, and where you ended up.</p>
+
+<img src="dvd.png">
+
+<div id = "blurb">
+<p><i>This interactive program allows you to see the relationship between <span style="color:#009900;">distance</span> and <span style="color:#FF0000;">displacement</span>. Click on the window, and use the arrow keys to move the circle around. At the top right corner, you will see the distance traveled and meters displaced.</i></p>
+</div>
 
 <canvas data-processing-sources="dvd.pde"></canvas>
+
+<h3>Practice Problems and Answers</h3>
+
+<ul>1. A ball rolls 5 meters straight ahead. What are its distance and displacement?</ul>
+<ul>2. An airplane travels 50 kilometers north, then doubles back and travels 30 kilometers south. What are its distance and displacement?</ul>
+<ul>3. A man runs a kilometer in a circle. When he finishes, he's in the same spot as he started in. What are his distance and displacement?</ul>
+<ul>4. A skater skates 40 meters straight ahead. Wanting to impress his friends, he shows his skating prowess by suddenly turning after the 40 meters at a perfect 90 degree angle. He then travels 30 meters. What are his distance and displacement?</ul>
+<ul>5. A physics teacher accidentally drops a ball two meters from the ground. He has quick reflexes, so on its way up, he catches it one meter from the ground after it bounces once. What is the ball's distance and displacement?</ul>
+<ul>6. An airplane flies straight for 10 kilometers. Suddenly, a gust of wind offsets its course by 30 degrees. It continues to travel for 5 more kilometers. What are its distance and dispalcement?</ul>
+<ul>7. According to the program above, what is the maximum displacement of the ball? What is the maximum distance?</ul>
 
 </body>
 
