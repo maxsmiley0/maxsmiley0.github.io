@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="processing.js"></script>
+</head>
+
+<style>
+
+#header {
+	text-align: center;
+	font-family: cursive;
+	color: white;
+	background-color: #070330;
+}
+
+#blurb {
+	background-color: yellow;
+}
+
+p {
+	font-family: Helvetica;
+	margin: 40px;
+	text-indent: 50px;
+	font-size: 18px;
+}
+
+body {
+	background-color: #bbd2f7;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #FFFFFF;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #86F767;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+}
+
+</style>
+
+<body>
+<div id = "header">
+	<h1>Kinematics</h1>
+</div>
+
+<p>We've established the difference between <span style="color:#FF0000;">vectors</span> and <span style="color:#009900;">scalars</span>. However, there are other <span style="color:#FF0000;">vectors</span> and <span style="color:#009900;">scalars</span> besides <span style="color:#FF0000;">displacement</span> and <span style="color:#009900;">distance</span>. Two must-know's in physics are <span style="color:#009900;">speed</span> and <span style="color:#FF0000;">velocity</span>. As you know, <span style="color:#009900;">speed</span> is the rate as which <span style="color:#009900;">distance</span> changes with respect to time. You may have heard the term <span style="color:#FF0000;">velocity</span>, but not have known the difference between <span style="color:#FF0000;">velocity</span> and <span style="color:#009900;">speed</span>. <span style="color:#FF0000;">Velocity</span> is how <span style="color:#FF0000;">displacement</span> changes with respect to time.
+</div>
+
+<h2><span style="color:#009900;">Speed</span> vs. <span style="color:#FF0000;">Velocity</span></h2>
+
+<p>Let's say you walk forward 10 meters, then walk backwards 6 meters. It takes you 8 seconds to do this. We know that the <span style="color:#009900;">distance</span> traveled is 16 meters, and the <span style="color:#FF0000;">displacement</span> is 4 meters. If we want to find the <span style="color:#009900;">speed</span> and <span style="color:#FF0000;">velocity</span>, we divide the <span style="color:#009900;">distance</span> by time, or the <span style="color:#FF0000;">displacement</span> by time, respectively. Both <span style="color:#009900;">speed</span> and <span style="color:#FF0000;">velocity</span> use the unit meters per second, or m/s.</p>
+
+<img src="images/svv1.png">
+<img src="images/svv2.png">
+
+<h2>Positives and Negative Values for <span style="color:#FF0000;">Velocity</span></h2>
+
+<p>Since vector values have direction, they can be positive or negative. Since speed only represents magnitude, it can only be positive. What is negative and what is positive depends on which way you define positive and negative. The <i>convention</i> in physics is that up, north, east, right, and forward are all defined as positive. Likewise, down, south, west, left, and backwards are all defined as negative. This holds true for displacement as well. 
+
+<img src="images/svv3.png">
+
+<div id = "blurb">
+<p><i>This interactive program allows you to see the relationship between <span style="color:#009900;">distance</span> and <span style="color:#FF0000;">displacement</span>. Click on the window, and use the arrow keys to move the circle around. At the top right corner, you will see the distance traveled and meters displaced.</i></p>
+</div>
+
+<canvas data-processing-sources="dvd.pde"></canvas>
+
+<h3>Practice Problems</h3>
+
+<ul>1. A ball rolls 5 meters straight ahead. What are its distance and displacement?</ul>
+<ul>2. An airplane travels 50 kilometers north, then doubles back and travels 30 kilometers south. What are its distance and displacement?</ul>
+<ul>3. A man runs a kilometer in a circle. When he finishes, he's in the same spot as he started in. What are his distance and displacement?</ul>
+<ul>4. A skater skates 40 meters straight ahead. Wanting to impress his friends, he shows his skating prowess by suddenly turning after the 40 meters at a perfect 90 degree angle. He then travels 30 meters. What are his distance and displacement?</ul>
+<ul>5. A physics teacher accidentally drops a ball two meters from the ground. He has quick reflexes, so on its way up, he catches it one meter from the ground after it bounces once. What is the ball's distance and displacement?</ul>
+<ul>6. According to the program above, what is the maximum displacement of the ball? What is the maximum distance?</ul>
+<ul><i><b>7. (Challenge)</b></i> An airplane flies straight for 10 kilometers. Suddenly, a gust of wind offsets its course by 30 degrees. It continues to travel for 5 more kilometers. What are its distance and displacement?</ul>
+
+
+<h3>Practice Answers</h3>
+
+<ul>1. <br />
+	<b>Distance: 5 meters<br />
+	Displacement: 5 meters<br /></b>
+	It travels 5 meters, so that is its distance. It is 5 meters from where it started off, so that is its displacement.
+</ul>
+<ul>2. <br />
+	<b>Distance: 80 kilometers<br />
+	Displacement: 20 kilometers<br /></b>
+	It travels 50 kilometers, then 30. It's total distance traveled is 80 kilometers. However, it travels 30 kilometers in the opposite direction it was initially flying in, so the distance between where it started and finished (aka displacement) is 50 - 30 = 20 kilometers.
+</ul>
+<img src="images/kp2.png">
+<ul>3. <br />
+	<b>Distance: 1 kilometer<br />
+	Displacement: 0 kilometers<br /></b>
+	He runs 1 kilometer, so that is his distance. However, he has not moved at all with respect to where he started, so his displacement is 0.
+</ul>
+<img src="images/kp3.png">
+<ul>4. <br />
+	<b>Distance: 70 meters<br />
+	Displacement: 50 meters<br /></b>
+	The boy travels 40 meters, then 30 meters. Therefore, the distance is 70 meters. However, he turns at a 90 degree angle. You can find the total displacement by drawing a right angle and solving for the hypotenuse.
+</ul>
+<img src="images/kp4.png">
+<ul>5. <br />
+	<b>Distance: 3 meters<br />
+	Displacement: 1 meters<br /></b>
+	It falls for two meters, then bounces up for one meter before caught. Therefore, the distance is 3 meters. However, the ball rises for one meter in the opposite direction that it fell in, so its displacement is 3 - 1 = 2 meters.
+</ul>
+<img src="images/kp5.png">
+<ul>6. <br />
+	<b>Distance: Infinite<br />
+	Displacement: 326 units<br /></b>
+	There is no limit to the distance. If you move back and forth, the distance traveled will just keep on rising. However, the ball cannot move outside of the screen. This limits the distance between the ball and the origin. The farthest possible distance away from the center can be found in any of the four corners, which will give you the number "326".
+</ul>
+
+<ul>7. <br />
+	<b>Distance: 15 kilometers<br />
+	Displacement: 14.55 kilometers<br /></b>
+	It travels 10 km, then 5 km. Therefore, its distance is 15 km. For its displacement, we have to take the 30 degrees into consideration. Draw a triangle where one leg is 10 km, and another is 5 km. The angle between them should be 150 degrees, because 30 degrees off course means 30 degrees from a 180 degree angle. Then use the law of cosines to solve for the final side, which is displacement.
+</ul>
+<img src="images/kp7.png">
+
+
+</body>
+
+
+</html>
