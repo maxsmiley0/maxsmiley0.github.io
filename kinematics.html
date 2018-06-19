@@ -1,145 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<script type="text/javascript" src="processing.js"></script>
-</head>
-
 <style>
 
-#header {
-	text-align: center;
-	font-family: cursive;
-	color: white;
-	background-color: #070330;
-}
-
-#blurb {
-	background-color: yellow;
-}
-
-p {
-	font-family: Helvetica;
-	margin: 40px;
-	text-indent: 50px;
-	font-size: 18px;
-}
-
 body {
-	background-color: #bbd2f7;
+background-image: url("images/math4.png");
 }
 
-h2 {
+#header {
+	background-color: #070330;
+	width: max-width;
+	height: 80px;
+
+	color: white;
+	font-family: Cursive;
 	text-align: center;
-	font-family: cursive;
-	background-color: #FFFFFF;
 }
-
-h3 {
+#padding {
+	width: max-width;
+	height: 10px;
+}
+#dvd {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
 	text-align: center;
-	font-family: cursive;
-	background-color: #86F767;
+	background-color: #83E29E;
+	display: inline-block;
+	float: center;
 }
-
-img {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+#svv {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #83E29E;
+	display: inline-block;
+	float: center;
 }
-
-canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-ul {
-	font-size: 16px;
-	font-family: Verdana;
-}
-
+#acceleration {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #83E29E;
+	display: inline-block;
+	float: center;
 }
 
 </style>
-
 <body>
-<div id = "header">
-	<h1>Kinematics</h1>
+<div id="header">
+	<p><font size="8">Kinematics</font></p>
 </div>
 
-<p>Kinematics is the study of motion. In Kinematics, there are many terms that refer to properties of motion, including distance, time, speed, etc. When referring to these properties, it is important to distinguish between <span style="color:#FF0000;">vector</span> and <span style="color:#009900;">scalar</span> properties. A <span style="color:#009900;">scalar</span> property is one that has magnitude, but not direction. A <span style="color:#FF0000;">vector</span> has a direction <i>and</i> a magnitude. For example, distance is a <span style="color:#009900;">scalar</span> property, but displacement is a <span style="color:#FF0000;">vector</span> property. This can be confusing, since they both use the same unit (the meter).</p>
-</div>
+<div id="padding"></div>
 
-<h2><span style="color:#009900;">Distance</span> vs. <span style="color:#FF0000;">Displacement</span></h2>
+<a href="dvd.html"><div id="dvd">
+	<p><font size="5">Distance vs Displacement</font></p>
+	<img src="images/dvd1.png">
+</div></a>
 
-<p>Let's say you walk 10 meters to the right, and then walk 10 meters to the left. How far have you traveled? If we're talking about <span style="color:#009900;">distance</span>, you have traveled 20 meters. If we're talking about <span style="color:#FF0000;">displacement</span>, you have been displaced 0 meters. Since <span style="color:#009900;">distance</span> is a <span style="color:#009900;">scalar</span> quantity, it simply represents the <i>net amount of meters you've traveled</i>. However, <span style="color:#FF0000;">displacement</span> is <span style="color:#FF0000;">vector</span> valued. This means that direction matters, so <span style="color:#FF0000;">displacement</span> represents the <span style="color:#009900;">distance</span> between where you started, and where you ended up.</p>
+<a href="newtons_laws.html"><div id = "svv">
+	<p><font size="5">Speed vs Velocity</font></p>
+	<img src="images/svv.png">
+</div></a>
 
-<img src="images/dvd.png">
-
-<div id = "blurb">
-<p><i>This interactive program allows you to see the relationship between <span style="color:#009900;">distance</span> and <span style="color:#FF0000;">displacement</span>. Click on the window, and use the arrow keys to move the circle around. At the top right corner, you will see the distance traveled and meters displaced.</i></p>
-</div>
-
-<canvas data-processing-sources="dvd.pde"></canvas>
-
-<h3>Practice Problems</h3>
-
-<ul>1. A ball rolls 5 meters straight ahead. What are its distance and displacement?</ul>
-<ul>2. An airplane travels 50 kilometers north, then doubles back and travels 30 kilometers south. What are its distance and displacement?</ul>
-<ul>3. A man runs a kilometer in a circle. When he finishes, he's in the same spot as he started in. What are his distance and displacement?</ul>
-<ul>4. A skater skates 40 meters straight ahead. Wanting to impress his friends, he shows his skating prowess by suddenly turning after the 40 meters at a perfect 90 degree angle. He then travels 30 meters. What are his distance and displacement?</ul>
-<ul>5. A physics teacher accidentally drops a ball two meters from the ground. He has quick reflexes, so on its way up, he catches it one meter from the ground after it bounces once. What is the ball's distance and displacement?</ul>
-<ul>6. According to the program above, what is the maximum displacement of the ball? What is the maximum distance?</ul>
-<ul><i><b>7. (Challenge)</b></i> An airplane flies straight for 10 kilometers. Suddenly, a gust of wind offsets its course by 30 degrees. It continues to travel for 5 more kilometers. What are its distance and displacement?</ul>
-
-
-<h3>Practice Answers</h3>
-
-<ul>1. <br />
-	<b>Distance: 5 meters<br />
-	Displacement: 5 meters<br /></b>
-	It travels 5 meters, so that is its distance. It is 5 meters from where it started off, so that is its displacement.
-</ul>
-<ul>2. <br />
-	<b>Distance: 80 kilometers<br />
-	Displacement: 20 kilometers<br /></b>
-	It travels 50 kilometers, then 30. It's total distance traveled is 80 kilometers. However, it travels 30 kilometers in the opposite direction it was initially flying in, so the distance between where it started and finished (aka displacement) is 50 - 30 = 20 kilometers.
-</ul>
-<img src="images/kp2.png">
-<ul>3. <br />
-	<b>Distance: 1 kilometer<br />
-	Displacement: 0 kilometers<br /></b>
-	He runs 1 kilometer, so that is his distance. However, he has not moved at all with respect to where he started, so his displacement is 0.
-</ul>
-<img src="images/kp3.png">
-<ul>4. <br />
-	<b>Distance: 70 meters<br />
-	Displacement: 50 meters<br /></b>
-	The boy travels 40 meters, then 30 meters. Therefore, the distance is 70 meters. However, he turns at a 90 degree angle. You can find the total displacement by drawing a right angle and solving for the hypotenuse.
-</ul>
-<img src="images/kp4.png">
-<ul>5. <br />
-	<b>Distance: 3 meters<br />
-	Displacement: 1 meters<br /></b>
-	It falls for two meters, then bounces up for one meter before caught. Therefore, the distance is 3 meters. However, the ball rises for one meter in the opposite direction that it fell in, so its displacement is 3 - 1 = 2 meters.
-</ul>
-<img src="images/kp5.png">
-<ul>6. <br />
-	<b>Distance: Infinite<br />
-	Displacement: 326 units<br /></b>
-	There is no limit to the distance. If you move back and forth, the distance traveled will just keep on rising. However, the ball cannot move outside of the screen. This limits the distance between the ball and the origin. The farthest possible distance away from the center can be found in any of the four corners, which will give you the number "326".
-</ul>
-
-<ul>7. <br />
-	<b>Distance: 15 kilometers<br />
-	Displacement: 14.55 kilometers<br /></b>
-	It travels 10 km, then 5 km. Therefore, its distance is 15 km. For its displacement, we have to take the 30 degrees into consideration. Draw a triangle where one leg is 10 km, and another is 5 km. The angle between them should be 150 degrees, because 30 degrees off course means 30 degrees from a 180 degree angle. Then use the law of cosines to solve for the final side, which is displacement.
-</ul>
-<img src="images/kp7.png">
-
-
+<a href="wep.html"><div id = "acceleration">
+	<p><font size="5">Acceleration</font></p>
+	<img src="images/acceleration.png">
+</div></a>
 </body>
-
-
 </html>
