@@ -12,6 +12,7 @@ float avelocity;
 float aspeed;
 int ivelocity;
 int ispeed = 2;
+int realTime;
 
 int timer = 0;
 
@@ -23,6 +24,7 @@ void draw(){
   background(#c9366c);
   fill(255);
   rect(0, 75, 800, 50);
+  realTime = round(time/6);
   
   fill(0);
   textSize(10);
@@ -53,24 +55,25 @@ void draw(){
     ivelocity = 0;
   }
   
-  if (time > 600){
+  if (timer > 600){
     start = false;
   }
   
   fill(0);
   textSize(15);
   
-  text("Instantaneous Speed: " + ispeed*60, 120, 20);
-  text("Instantaneous Velocity: " + ivelocity*60, 120, 40);
+  text("Instantaneous Speed: " + ispeed*60, 580, 20);
+  text("Instantaneous Velocity: " + ivelocity*60, 580, 40);
   
   text("Average Speed: " + round(aspeed*60), 350, 20);
   text("Average Velocity: " + round(avelocity*60), 350, 40);
   
-  text("Distance: " + distance, 580, 20);
-  text("Displacement: " + round(displacement), 580, 40);
-  text("Time: " + round(time/60) + "s", 580, 60);
+  text("Distance: " + distance, 120, 20);
+  text("Displacement: " + round(displacement), 120, 40);
+  textSize(30);
+  text("Time: " + realTime/10 + "s", 120, 170);
   
-  if (start || timer >= 600) {
+  if (start) {
     fill(#6d1cbf);
     strokeWeight(3);
     rect(0, 0, 100, 50);
