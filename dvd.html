@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="processing.js"></script>
+	<script type="text/javascript" src="libraries/processing.js"></script>
 </head>
 
 <style>
@@ -15,6 +15,17 @@
 
 #blurb {
 	background-color: yellow;
+}
+
+#mechanics {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #83E29E;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -65,10 +76,10 @@ ul {
 
 <body>
 <div id = "header">
-	<h1>Kinematics</h1>
+	<h1>Mechanics</h1>
 </div>
 
-<p>Kinematics is the study of motion. In Kinematics, there are many terms that refer to properties of motion, including distance, time, speed, etc. When referring to these properties, it is important to distinguish between <span style="color:#FF0000;">vector</span> and <span style="color:#009900;">scalar</span> properties. A <span style="color:#009900;">scalar</span> property is one that has magnitude, but not direction. A <span style="color:#FF0000;">vector</span> has a direction <i>and</i> a magnitude. For example, distance is a <span style="color:#009900;">scalar</span> property, but displacement is a <span style="color:#FF0000;">vector</span> property. This can be confusing, since they both use the same unit (the meter).</p>
+<p>Mechanics is the study of motion. In mechanics, there are many terms that refer to properties of motion, including distance, time, speed, etc. When referring to these properties, it is important to distinguish between <span style="color:#FF0000;">vector</span> and <span style="color:#009900;">scalar</span> properties. A <span style="color:#009900;">scalar</span> property is one that has magnitude, but not direction. A <span style="color:#FF0000;">vector</span> has a direction <i>and</i> a magnitude. For example, distance is a <span style="color:#009900;">scalar</span> property, but displacement is a <span style="color:#FF0000;">vector</span> property. This can be confusing, since they both use the same unit (the meter).</p>
 </div>
 
 <h2><span style="color:#009900;">Distance</span> vs. <span style="color:#FF0000;">Displacement</span></h2>
@@ -81,7 +92,7 @@ ul {
 <p><i>This interactive program allows you to see the relationship between <span style="color:#009900;">distance</span> and <span style="color:#FF0000;">displacement</span>. Click on the window, and use the arrow keys to move the circle around. At the top right corner, you will see the distance traveled and meters displaced.</i></p>
 </div>
 
-<canvas data-processing-sources="dvd.pde"></canvas>
+<canvas data-processing-sources="widgets/dvd.pde"></canvas>
 
 <h3>Practice Problems</h3>
 
@@ -138,6 +149,10 @@ ul {
 </ul>
 <img src="images/kp7.png">
 
+<a href="mechanics.html"><div id="mechanics">
+	<font size="6">Back to Mechanics</font>
+	<img src="images/mechanics.png">
+</div></a>
 
 </body>
 

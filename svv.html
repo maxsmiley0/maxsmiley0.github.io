@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="processing.js"></script>
+	<script type="text/javascript" src="libraries/processing.js"></script>
 </head>
 
 <style>
@@ -11,6 +11,17 @@
 	font-family: cursive;
 	color: white;
 	background-color: #070330;
+}
+
+#mechanics {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #83E29E;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #blurb {
@@ -65,7 +76,7 @@ ul {
 
 <body>
 <div id = "header">
-	<h1>Kinematics</h1>
+	<h1>Mechanics</h1>
 </div>
 
 <p>We've established the difference between <span style="color:#FF0000;">vectors</span> and <span style="color:#009900;">scalars</span>. However, there are other <span style="color:#FF0000;">vectors</span> and <span style="color:#009900;">scalars</span> besides <span style="color:#FF0000;">displacement</span> and <span style="color:#009900;">distance</span>. Two must-know's in physics are <span style="color:#009900;">speed</span> and <span style="color:#FF0000;">velocity</span>. As you know, <span style="color:#009900;">speed</span> is the rate at which <span style="color:#009900;">distance</span> changes with respect to time. You may have heard the term <span style="color:#FF0000;">velocity</span>, but not have known the difference between <span style="color:#FF0000;">velocity</span> and <span style="color:#009900;">speed</span>. <span style="color:#FF0000;">Velocity</span> is how <span style="color:#FF0000;">displacement</span> changes with respect to time.
@@ -90,7 +101,7 @@ ul {
 <p><i>This interactive program allows you to see the relationship between <span style="color:#009900;">speed</span> and <span style="color:#FF0000;">velocity</span>. Click on the window, and use the arrow keys to move the circle around. Press start, and a clock will count out 10 seconds. At the top, you will see the average <span style="color:#009900;">speed</span> and <span style="color:#FF0000;">velocity</span> attained over 10 seconds, as well as the <span style="color:#009900;">distance</span> and <span style="color:#FF0000;">velocity</span> from the origin.</i></p>
 </div>
 
-<canvas data-processing-sources="svv.pde"></canvas>
+<canvas data-processing-sources="widgets/svv.pde"></canvas>
 
 <div id = "blurb">
 <p><i>Notice how at any point in time, the average <span style="color:#009900;">speed</span> is the <span style="color:#009900;">distance</span> divided by time, and the average <span style="color:#FF0000;">velocity</span> is the <span style="color:#FF0000;">displacement</span> divided by time. This can most easily be seen at the end of 10 seconds.</i></p>
@@ -176,6 +187,12 @@ ul {
 <ul>
 	x represents velocity. Therefore the average velocity is -24 meters per second. The speed is the velocity plus 80 meters per second, so the speed is 56 meters per second. To find the time, we can either divide the distance by the speed, or the velocity by the displacement. Both calculations give you 1.25 seconds.
 </ul>
+
+<a href="mechanics.html"><div id="mechanics">
+	<font size="6">Back to Mechanics</font>
+	<img src="images/mechanics.png">
+</div></a>
+
 </body>
 
 

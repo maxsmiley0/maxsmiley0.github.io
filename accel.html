@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="libraries/processing.js"></script>
+</head>
+
+<style>
+
+#header {
+	text-align: center;
+	font-family: cursive;
+	color: white;
+	background-color: #070330;
+}
+
+#blurb {
+	background-color: yellow;
+}
+
+#mechanics {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #83E29E;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+	font-family: Helvetica;
+	margin: 40px;
+	text-indent: 50px;
+	font-size: 18px;
+}
+
+body {
+	background-color: #bbd2f7;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #FFFFFF;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #86F767;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+}
+
+</style>
+
+<body>
+<div id = "header">
+	<h1>Mechanics</h1>
+</div>
+
+<p>
+	We've learned that <span style="color:#FF0000;">displacement</span> is the distance from the starting point to the ending point. We've learned that <span style="color:#FF0000;">velocity</span> is the rate at which <span style="color:#FF0000;">displacement</span> changes with respect to time, or that it can simply be found by dividing <span style="color:#FF0000;">displacement</span> by time. <span style="color:#FF0000;">Acceleration</span> will be the focus of this lesson, and it respresents how <span style="color:#FF0000;">velocity</span> changes with respect to time.
+</p>
+</div>
+
+<h2><span style="color:#FF0000;">Acceleration</span></h2>
+
+<p>Thus far, we have only been dealing with non<span style="color:#FF0000;">accelerated</span> motion. This is motion where the <span style="color:#FF0000;">velocity</span> stays constant. However, in real life, rarely anything in motion stays at a constant <span style="color:#FF0000;">velocity</span>. For example, when you jump, you fall faster and faster after each second that has gone by. The mathematical relationship between <span style="color:#FF0000;">acceleration</span>, <span style="color:#FF0000;">velocity</span>, and time is represented by</p>
+
+<img src="images/accel1.png">
+
+<p>Let's say that racecar driver starts off with an initial <span style="color:#FF0000;">velocity</span> of -66.22 meters per second. He <span style="color:#FF0000;">accelerates</span> to 0 meters per second in two seconds. We can find his average <span style="color:#FF0000;">acceleration</span>, because we know the initial <span style="color:#FF0000;">velocity</span> (-66.22), the final <span style="color:#FF0000;">velocity</span> (0), and the time (2).
+<br /><br /><br />
+
+<img src="images/accel2.png">
+
+<p>Notice how the units for <span style="color:#FF0000;">acceleration</span> are meters per second squared. This can be confusing to interpret, but imagine that it represents "one meter per second per second." In other words, 33.11 meters per second squared means that after each second that passes, the <span style="color:#FF0000;">velocity</span> increases by 33.11 meters per second.</p>
+
+<h2>Direction of <span style="color:#FF0000;">Acceleration</span></h2>
+
+<p>
+	Like <span style="color:#FF0000;">velocity</span>, <span style="color:#FF0000;">acceleration</span> is a <span style="color:#FF0000;">vector</span>. This means that the direction matters. This can be visualized by defining <span style="color:#FF0000;">acceleration</span> as something you can feel. Whenever you feel a push or a pull, you are being <span style="color:#FF0000;">accelerated</span>. Imagine that you're in a car. There are three means of <span style="color:#FF0000;">acceleration</span> in a car: the gas pedal, the brake pedal, and the steering wheel. It's obvious that you can be <span style="color:#FF0000;">accelerated</span> with a gas pedal; while you press on it, your <span style="color:#FF0000;">velocity</span> will increase. While pressing this pedal, you feel yourself being pushed into the back of the car seat. While using the brake pedal, you "<span style="color:#FF0000;">decelerate</span>". This is also <span style="color:#FF0000;">accelerated</span> motion, it is <i>negative</i> <span style="color:#FF0000;">acceleration</span>. As you press the brake pedal, you feel yourself being thrust forward. The least intuitive means of <span style="color:#FF0000;">accelerating</span> is by using the steering wheel. If you round a corner at a constant 10 meters per second, it would seem that the <span style="color:#FF0000;">velocity</span> doens't change. However, it does, because <span style="color:#FF0000;">velocity</span> is <span style="color:#009900;">speed</span> <i>with direction</i>. While using the steering wheel, you are turning, therefore changing the direction. If you've ever taken a sharp corner without slowing down, you've felt the <span style="color:#FF0000;">acceleration</span> (when you were thrust into the side of the car), even though your <span style="color:#009900;">speed</span> didn't change at all.
+</p>
+
+<div id = "blurb">
+<p><i>This interactive program allows you to see the relationship between <span style="color:#FF0000;">velocity</span> and <span style="color:#FF0000;">acceleration</span>. Click on the window, and use the left and right arrow keys to <span style="color:#FF0000;">accelerate</span> the ball. When the right key is held down, the ball will be <span style="color:#FF0000;">accelerated</span> in the positive direction. When the left key is held down, the ball will <span style="color:#FF0000;">accelerate</span> in the negative direction. When no keys are held down, the ball will undergo no <span style="color:#FF0000;">acceleration</span>.</i></p>
+</div>
+
+<canvas data-processing-sources="widgets/accel.pde"></canvas>
+
+<h3>Practice Problems</h3>
+
+<ul>1. A 100 meter dash sprinter starts at rest, and gets up to 20 meters per second in 4 seconds. What is his average acceleration?</ul>
+<ul>2. A proton has an initial velocity of - 100,000,000 meters per second. It passes through a cathode tube, and is deflected in the opposite direction it was originally traveling in. After 10 seconds, its velocity is 100,000,000 meters per second. What was its average acceleration?</ul>
+<ul>3. Near the surface of the earth, the acceleration due to gravity is roughly 10 meters per second downwards. If a ball is thrown upward with an initial velocity of 30 meters per second, how long is it in the air for until it reaches its highest point?</ul>
+<ul>4. According to the program, is it possible to have a negative acceleration, but a positive velocity? </ul>
+<ul>5. According to the program, is it possible to have a positive acceleration, but a negative velocity?</ul>
+<ul>6. True or False.<br />If an object is not accelerating, it is at rest.</ul>
+<ul>7. True or False.<br />If the object is at rest at a certain instance, it is not accelerating.</ul>
+<ul><i><b>8. (Challenge)</b></i> An object starts at rest, and accelerates uniformly at 10 meters per second square. How far is it from its starting point after 3 seconds?</ul>
+
+
+<h3>Practice Answers</h3>
+
+<ul>1. <br />
+	<b>Speed: 5 meters per second<br />
+	Velocity: -5 meters per second<br /></b>
+	It travels 5 meters, so that is its distance. It falls down 5 meters, so the displacement is -5 meters by convention. To find the speed and velocity, divide the distance and displacement by time, respectively.
+</ul>
+<ul>2. <br />
+	<b>Speed: 10 meters per second<br />
+	Velocity: -3.33 meters per second<br /></b>
+	First find the distance and displacement. The distance is 120 meters, while the displacement is -40 meters. Then divide both by 12 seconds, to get average speed and velocity.
+</ul>
+<img src="images/svv4.png">
+<ul>3. <br />
+	<b>Time: 1 second<br />
+	Velocity: 0 meters per second<br /></b>
+	The athlete jumps up to two meters, so by the time she lands, she has traveled 4 meters. We want to solve for time, and we know speed and distance. Since speed is distance over time, time is distance over speed. Dividing 4 by 4 gives us one second. Since the athlete ends up where she started, her displacement is 0, and therefore her velocity is zero.
+</ul>
+<img src="images/svv5.png">
+<ul>4. <br />
+	<b>It is not possible</b><br />
+	If the ball is to the left of the starting point, this means negative displacement. Since velocity is displacement over time, it is impossible for the velocity to be positive if the displacement is negative.
+</ul>
+<ul>5. <br />
+	<b>It is possible</b><br />
+	The instantaneous velocity is a measure of the velocity at a single instance in time. If the ball is traveling to the right, then its instantaneous velocity is positive.
+</ul>
+<ul>6. <br />
+	<b>False</b><br />
+	Speed is always positive, even when the velocity is negative. Therefore, knowing the speed tells us nothing about the sign of the velocity.
+</ul>
+
+<ul>7. <br />
+	<b>True</b><br />
+	If the velocity is positive, that means the displacement is positive. If the displacement is positive, that means the distance is positive. Therefore, the speed is positive, because speed shares the same sign as distance, just as average velocity always shares the same sign as average displacement.
+</ul>
+<ul>8. <br />
+	<b>True</b><br />
+	If the speed is zero, the distance is zero. Therefore, the displacement is zero. Since the displacement is zero, the velocity is zero.
+</ul>
+<ul>9. <br />
+	<b>False</b><br />
+	If the velocity is zero, the displacement is zero. However, the distance can still be nonzero. One example is if you walk forward one meter, then back one meter. Your displacement is 0 meters, but your distance is 2 meters. Since the distance could be nonzero, the speed could be nonzero.
+</ul>
+<ul>10. <br />
+	<b>Average Speed: 56 meters per second<br />
+	Average Velocity: -24 meters per second<br />
+	Time: 1.25 seoncds</b><br />
+	Start by drawing the scenario. From the prompt, we automatically know the distance and displacement.
+</ul>
+<img src="images/svv6.png">
+<ul>
+	The prompt tells us that the difference between average speed and velocity is 80. Speed is always greater or equal to velocity, so in this scenario speed must be 80 meters per second greater than the velocity. We can represent this with variables: let <b>x</b> be velocity, and <b>x + 80</b> be speed.
+</ul>
+<img src="images/svv7.png">
+<ul>
+	We know that speed is distance over time. We also know that velocity is displacement over time. Since we have variables for most of these criteria, we can write out equations for it.
+</ul>
+<img src="images/svv8.png">
+<ul>
+	Notice that there's a common variable, time. Solve for time, then we can set both equations equal to each other.
+</ul>
+<img src="images/svv9.png">
+<ul>
+	x represents velocity. Therefore the average velocity is -24 meters per second. The speed is the velocity plus 80 meters per second, so the speed is 56 meters per second. To find the time, we can either divide the distance by the speed, or the velocity by the displacement. Both calculations give you 1.25 seconds.
+</ul>
+
+<a href="mechanics.html"><div id="mechanics">
+	<font size="6">Back to Mechanics</font>
+	<img src="images/mechanics.png">
+</div></a>
+
+</body>
+
+
+</html>
