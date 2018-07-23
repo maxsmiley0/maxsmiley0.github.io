@@ -91,7 +91,7 @@ ul {
 
 <img src="images/kinematics2.png">
 
-<h2>Examples</h2>
+<h2>Example</h2>
 
 <p>In any given kinematics problem, you should follow these steps.
 
@@ -109,38 +109,53 @@ ul {
 	3. The first kinematic equation is the only one that relates <span style ="color:#FF0000;">initial velocity, final velocity, acceleration</span>, and <span style ="color:#FF0000;">time</span> all together.<br /><br />
 	4. Plugging in <span style ="color:#FF0000;">vf = 15, vi = 0, and a = 3, </span>gives you <span style ="color:#000000;">t = 5s.</span><br />
 
-</ul>
+</ul></p>
 
+<h2>Freefall problems</h2>
+
+<p>Freefall problems have to do with an object's motion, where the only force is gravity. For example, throwing a ball straight up or down would be a freefall problem. Rolling a ball on a horizontal surface would not be a freefall problem. The key in freefall problems, is that gravity will accelerate the object downwards at 9.8 meters per second squared. Because of this, we can use <span style ="color:#FF0000;">a = -9.8</span>, just by knowing that its a freefall problem. The sign is negative, because upwards is usually defined to be the positive direction.
+
+<p>Let's say we throw a ball upwards with an initial velocity of 15 meters per second. How far will it be displaced in 3 seconds?
+
+<ul><span style="color:#008800;">1. The variables given are <span style ="color:#FF0000;">acceleration, initial velocity, and time</span>. This is a freefall problem, which means the <span style ="color:#FF0000;">acceleration is -9.8 meters per second squared.</span><br /><br />
+	2. The question asks for <span style ="color:#FF0000;">displacement</span>, so you are solving for variable <span style ="color:#FF0000;">"d".</span><br /><br />
+	3. The third kinematic equation is the only one that relates <span style ="color:#FF0000;">initial velocity, time, acceleration</span>, and <span style ="color:#FF0000;">displacement</span> all together.<br /><br />
+	4. Plugging in <span style ="color:#FF0000;">vi = 15, t = 3, and a = -9.8, </span>gives you <span style ="color:#000000;">d = .9 meters</span><br />
+
+</ul></p>
+
+<p>Since the displacement is so close to zero, we can assume that the ball went upwards, and was on its way down after 3 seconds. It wouldn't make sense for the ball to have traveled less than a meter upwards after throwing it up at 15 meters per second.
 <div id = "blurb">
-<p><i>This interactive program allows you to see the relationship between <span style="color:#009900;">distance</span> and <span style="color:#FF0000;">displacement</span>. Click on the window, and use the arrow keys to move the circle around. At the top right corner, you will see the distance traveled and meters displaced.</i></p>
+<p><i>This interactive program allows you to see the relationship dispalcement, velocity, acceleration, and time, by adjusting the green sliders below. Start by giving the program initial conditions: an initial displacement, velocity, and accleration. Play around with which combinations yield which results. You may stop the program at any point, and it will freeze, giving you the instantaneous velocity/displacement/acceleration/time.</i></p>
 </div>
 
-<canvas data-processing-sources="widgets/pendulum.pde"></canvas>
+<canvas data-processing-sources="widgets/kinematics.pde"></canvas>
 
 <h3>Practice Problems</h3>
 
-<ul>1. A ball rolls 5 meters straight ahead. What is its distance and displacement?</ul>
-<ul>2. An airplane travels 50 kilometers north, then doubles back and travels 30 kilometers south. What is its distance and displacement?</ul>
-<ul>3. A man runs a kilometer in a circle. When he finishes, he's in the same spot as he started in. What is his distance and displacement?</ul>
-<ul>4. A skater skates 40 meters straight ahead. Wanting to impress his friends, he shows his skating prowess by suddenly turning after the 40 meters at a perfect 90 degree angle. He then travels 30 meters. What is his distance and displacement?</ul>
-<ul>5. A physics teacher accidentally drops a ball two meters from the ground. He has quick reflexes, so on its way up, he catches it one meter from the ground after it bounces once. What is the ball's distance and displacement?</ul>
-<ul>6. According to the program above, what is the maximum displacement of the ball? What is the maximum distance?</ul>
-<ul><i><b>7. (Challenge)</b></i> An airplane flies straight for 10 kilometers. Suddenly, a gust of wind offsets its course by 30 degrees. It continues to travel for 5 more kilometers. What is its distance and displacement?</ul>
+
+<ul>1. A man stands at the edge of a cliff,some height d. He throws one stone straight upwards, with a velocity of +v. At the same time, he throws a stone straight downwards, with a velocity of -v. Which stone will hit the ground with a greater final velocity?</ul>
+<ul>2. A ball is thrown upwards. On its ascent, is the acceleration positive, zero, or negative. What about right at the peak of its motion? On its way down?</ul>
+<ul>3. A rocket starts from rest, and blasts upwards. It covers 100 meters in 5 seconds. What is its acceleration?</ul>
+<ul>4. A ball is thrown upwards with an initial velocity of 5 meters per second. At what distance from the thrower will the ball be at its greatest height?</ul>
+<ul>5. A car traveling on a freeway covers 5000 meters. It accelerates at a constant 2 meters per second during its trip, and ends with a final velocity of 50 meters per second. What was its initial velocity?</ul>
+<ul>6. During a race, a runner accelerates from 8 meters per second to 10 meters per second in 2 seconds during the final stretch. What is her average acceleration?</ul>
+<ul>7. In the previous question, what distance did the runner cover while accelerating from 8 to 10 meters per second?</ul>
+<ul><i><b>8. (Challenge)</b></i> Two cars line up for a race. The gun goes off, and one shoots off from the start with an initial speed of 20 meters per second. The other car starts at rest, but accelerates slowly, at a steady 2 meters per second. How far away from the starting line will the accelerating car pass the nonaccelerating car? How long will it take for this to happen?</ul>
 
 
 <h3>Practice Answers</h3>
 
 <ul>1. <br />
-	<b>Distance: 5 meters<br />
-	Displacement: 5 meters<br /></b>
-	It travels 5 meters, so that is its distance. It is 5 meters from where it started off, so that is its displacement.
+	<b>Both will hit the ground with the same final velocity<br /></b>
+	To verify this, we can plug in arbitrary variables to the kinematic equations. We have the displacement (d), initial velocity (positive and negative v), and since this is a freefall problem, we know each ball has the same acceleration (a = -9.8). We're trying to find final velocity, so we need to find an equation that relates displacement, initial and final velocity, and acceleration. The fourth kinematic equation satisfies this parameter. You'll notice that the initial velocity term is squared, which cancels out the negative sign, verifying that a positive or negative initial velocity will yield the same result.
 </ul>
 <ul>2. <br />
-	<b>Distance: 80 kilometers<br />
-	Displacement: 20 kilometers<br /></b>
-	It travels 50 kilometers, then 30. It's total distance traveled is 80 kilometers. However, it travels 30 kilometers in the opposite direction it was initially flying in, so the distance between where it started and finished (aka displacement) is 50 - 30 = 20 kilometers.
+	<b>Upwards: negative acceleration<br />
+	Peak: negative acceleration<br />
+	Downwards: negative acceleration<br /></b>
+	At every point in time, a ball in freefall will be accelerating downwards, or negatively. On its way up, its speed is decreasing, meaning that the acceleration acts in the opposite direction of the motion. On the way down, the speed is increasing, which means that the acceleration acts in the same direction of the motion. Its a bit trickier to conceptualize when the ball is at its peak, but remember that an object with zero velocity can have nonzero acceleration. Even though it is not moving at that point in time, its velocity will be negative in the next instance, so it <i>does</i> have a change in velocity (which is an acceleration).
 </ul>
-<img src="images/kp2.png">
 <ul>3. <br />
 	<b>Distance: 1 kilometer<br />
 	Displacement: 0 kilometers<br /></b>
