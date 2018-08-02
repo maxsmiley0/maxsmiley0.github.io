@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="libraries/processing.js"></script>
+</head>
+
+<style>
+body {
+	background-color: #bbd2f7;
+}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+	background-color: yellow;
+	font-family: Helvetica;
+	margin: 40px;
+	text-indent: 50px;
+	font-size: 18px;
+}
+
+</style>
+
+<body>
+
+<p><i>This models a pendulum's position as a function of time. You can drag the sliders on the top left corner to see how a change in gravitational acceleration and the length of the pendulum will affect its period and frequency. Note that a change in mass will not affect the period or frequency, but will change the total amount of energy.</i></p>
+</div>
+<canvas data-processing-sources="widgets/pendulum.pde"></canvas>
+<div id = blurb>
+<p><i>This shows how the acceleration of a block on an inclined plane changes with respect to the force of friction, and incline angle. Adjust these variables using the sliders at the top right corner.</i></p>
+</div>
+<canvas data-processing-sources="widgets/ip.pde"></canvas>
+<div id = blurb>
+<p><i>This program shows the properties of plane, convex, and concave mirrors. Choose the mirror type by clicking on the buttons in the top right corner, and adjust the distance between the mirror and the object using the slider in the top left corner of the program.</i></p>
+</div>
+<canvas data-processing-sources="widgets/optics.pde"></canvas>
+<div id = blurb>
+<p><i>This program shows how an object will move given an initial displacement, velocity, and acceleration. Adjust these initial conditions using the sliders at the bottom.</i></p>
+</div>
+<canvas data-processing-sources="widgets/kinematics.pde"></canvas>
+<div id = blurb>
+<p><i>This program demonstrates the difference between distance and displacement. Click in the window, and move the ball around using your arrow keys. In the top right corner, the distance and displacment will be shown.</i></p>
+</div>
+<canvas data-processing-sources="widgets/dvd.pde"></canvas>
+<div id = blurb>
+<p><i>This program models positive, negative, and zero acceleration. Click on the window, and use either your left or right arrow keys. The right arrow key will give the ball a positive acceleration, and the left arrow key will give the ball a negative acceleration. If no buttons are pressed, the ball will remain at a constant velocity.</i></p>
+</div>
+<canvas data-processing-sources="widgets/accel.pde"></canvas>
+<div id = blurb>
+<p><i>This program models projectile motion in two dimensions. Change the horizontal and veritcal initial velocities at the bottom of the program, and press start when you're ready to see how a projectile given those inital conditions would react.</i></p>
+</div>
+<canvas data-processing-sources="widgets/pmg.pde"></canvas>
+<div id = blurb>
+<p><i>This program models torque. Click anywhere along the rectangular balanced beam, and note how the angular acceleration changes based on where you put your weight.</i></p>
+</div>
+<canvas data-processing-sources="widgets/torque.pde"></canvas>
+
+
+</body>
+
+
+</html>
