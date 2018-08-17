@@ -41,7 +41,6 @@ void draw() {
     state = 0;
     projX = projX0;
     projY = projY0;
-    tracePath = false;
     velocityX = velocityX0;
     velocityY = velocityY0;
     fill(200);
