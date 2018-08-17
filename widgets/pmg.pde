@@ -20,7 +20,6 @@ int accelX = accelX0;
 int accelY = accelY0;
 
 int state = 0;
-boolean accelVector = false;
 boolean tracePath  = false;
 boolean start = false;
 
@@ -42,6 +41,7 @@ void draw() {
     state = 0;
     projX = projX0;
     projY = projY0;
+    tracePath = false;
     velocityX = velocityX0;
     velocityY = velocityY0;
     fill(200);
@@ -63,16 +63,7 @@ void draw() {
   rect(31, 10, 200, 30);
   fill(255, 0, 0);
   textSize(15);
-  text("Show acceleration vector", 37, 23);
-  
-  fill(200, 200, 200);
-  rect(31, 30, 200, 30);
-  fill(255, 0, 0);
-  textSize(15);
-  noFill();
-  stroke(0, 0, 0);
-  rect(10, 40, 20, 20);
-  text("Trace projectile path", 37, 53);
+  text("Trace projectile path", 37, 23);
   
   if (tracePath) {
      vectors();
@@ -80,35 +71,18 @@ void draw() {
   physics();
 
   if (mousePressed && mouseX > 10 && mouseX < 30 && mouseY > 10 && mouseY < 30) {
-    if (accelVector){
-      stroke(0, 0, 0);
-      strokeWeight(1);
-      fill(200, 200, 200);
-      rect(10, 10, 20, 20);
-      accelVector = false;
-    }
-    else{
-      strokeWeight(1);
-      stroke(0, 0, 0);
-      fill(0, 0, 0);
-      rect(10, 10, 20, 20);
-      accelVector = true;
-    }
-  }
-  
-  if (mousePressed && mouseX > 10 && mouseX < 30 && mouseY > 40 && mouseY < 60) {
     if (tracePath){
-      strokeWeight(1);
       stroke(0, 0, 0);
+      strokeWeight(1);
       fill(200, 200, 200);
-      rect(10, 40, 20, 20);
+      rect(10, 10, 20, 20);
       tracePath = false;
     }
     else{
       strokeWeight(1);
       stroke(0, 0, 0);
       fill(0, 0, 0);
-      rect(10, 40, 20, 20);
+      rect(10, 10, 20, 20);
       tracePath = true;
     }
   }
@@ -177,12 +151,6 @@ void vectors() {
   stroke(0, 0, 0);
   strokeWeight(5);
   line(projX, projY, projX + velocityX, projY - velocityY);
-
-  if (accelVector) {
-    strokeWeight(4);
-    stroke(255, 0, 0);
-    line(projX, projY, projX + accelX*20, projY + accelY*20 - 5);
-  }
 }
 
 void coordinates() {
