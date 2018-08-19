@@ -120,7 +120,10 @@ ul {
 
 <p>A pitcher throws a ball with an initial velocity of 40 meters per second, 45 degrees up relative to the ground. If the pitcher is five feet tall, how long will it take for the ball to hit the ground. 
 
-<ul><span style="color:#008800;">1. The variables given are <span style ="color:#FF0000;">acceleration, initial velocity, and final velocity</span>. The problem says that the ball starts at rest, which means its <span style ="color:#FF0000;">initial velocity is 0 meters per second</span><br /><br />
+<ul><span style="color:#008800;">1. We know that the angle is 45 degrees, and the net initial velocity is 40 meters per second. Therefore, we can break it up into horizontal and vertical velocity components. Using the equation above, 40 * cos(45) = 21 meters per second horizontally. Likewise, 40 * sin(45) = 21 meters per second vertically.<br /><br />
+
+<p>insert drawing</p>
+
 	2. The question asks for <span style ="color:#FF0000;">time</span>, so you are solving for variable <span style ="color:#FF0000;">"t".</span><br /><br />
 	3. The first kinematic equation is the only one that relates <span style ="color:#FF0000;">initial velocity, final velocity, acceleration</span>, and <span style ="color:#FF0000;">time</span> all together.<br /><br />
 	4. Plugging in <span style ="color:#FF0000;">vf = 15, vi = 0, and a = 3, </span>gives you <span style ="color:#000000;">t = 5s.</span><br />
@@ -128,7 +131,7 @@ ul {
 </ul></p>
 
 <div id = "blurb">
-<p><i>This interactive program models the flight of a projectile, given a certain initial horizontal and vertical velocity.</i></p>
+<p><i>This interactive program models the flight of a projectile, given a certain initial horizontal and vertical velocity. You can toggle the "trace projectile path" square in the top left corner. You can adjust the horizontal and vertical velocities using the sliders at the bottom.</i></p>
 </div>
 
 <canvas data-processing-sources="widgets/pmg.pde"></canvas>
