@@ -69,6 +69,11 @@ ul {
 	font-size: 16px;
 	font-family: Verdana;
 }
+li {
+	font-size: 16px;
+	font-family: Verdana;
+	background-color: yellow
+}
 
 }
 
@@ -105,30 +110,38 @@ ul {
 
 <h2>Logic behind projectile motion problems</span></h2>
 
-<p>In projectile motion problems, there are a lot of implicits. None of these will be mentioned, but it is safe to assume that these rules will alwyas hold up. For example, the acceleration in the vertical direction will be -9.8. Also, since the speed is constant in the horizontal direction, the acceleration in the horizontal direction will be zero. You will often have to deduce more information from the prompt. For example, if a question asks how far a projectile will have traveled horizontally when at the peak of its trajectory, you can assume the final velocity in the vertical direction is zero, as that is when a projectile is at its peak. You would first solve for time, because time is the only variable that relates the horizontal and vertical components together. Once you have time, you can find horizontal displacement by multiplying time by horizontal velocity.</p>
+<p>In projectile motion problems, there are a lot of implicits. None of these will be mentioned, but it is safe to assume that these rules will alwyas hold up. For example, the acceleration in the <span style ="color:#FF8800;">vertical</span> direction will be -9.8. Also, since the speed is constant in the <span style ="color:#8900D3;">horizontal</span> direction, the acceleration in the <span style ="color:#8900D3;">horizontal</span> direction will be zero. You will often have to deduce more information from the prompt. For example, if a question asks how far a projectile will have traveled <span style ="color:#8900D3;">horizontally</span> when at the peak of its trajectory, you can assume the final velocity in the <span style ="color:#FF8800;">vertical</span> direction is zero, as that is when a projectile is at its peak. You would first solve for time, because time is the only variable that relates the <span style ="color:#8900D3;">horizontal</span> and <span style ="color:#FF8800;">vertical</span> components together. Once you have time, you can find <span style ="color:#8900D3;">horizontal</span> displacement by multiplying time by <span style ="color:#8900D3;">horizontal</span> velocity.</p>
 
 <h2>Example</h2>
 
-<p>When solving projectile motion problems, make two equations: one for the horizontal direction, and one for the vertical direction. For the horizontal equation, you will always use the principle that distance is equal to velocity times time. A general rule for solving projectile motion problems follows.
+<p>When solving projectile motion problems, make two equations: one for the <span style ="color:#8900D3;">horizontal</span> direction, and one for the <span style ="color:#FF8800;">vertical</span> direction. For the <span style ="color:#8900D3;">horizontal</span> equation, you will always use the principle that distance is equal to velocity times time. A general rule for solving projectile motion problems follows.
 
-<ul><span style="color:#FF0000;">1. Break down the initial velocity into horizontal and vertical components, using the sine and cosine.<br /><br />
-	2. List the variables we have in the vertical direction. For example: acceleration (-9.8 meters per second squared), initial velocity, etc.<br /><br />
+<ul><span style="color:#FF0000;">1. Break down the initial velocity into <span style ="color:#8900D3;">horizontal</span> and <span style ="color:#FF8800;">vertical</span> components, using the sine and cosine.<br /><br />
+	2. List the variables we have in the <span style ="color:#FF8800;">vertical</span> direction. For example: acceleration (-9.8 meters per second squared), initial velocity, etc.<br /><br />
 	3. Use the equation that relates the given variables to the variable time<br /><br />
-	4. If necessary, multiply time by horizontal velocity to find horizontal displacement. This will not always be necessary, depending on the question.<br />
+	4. If necessary, multiply time by <span style ="color:#8900D3;">horizontal</span> velocity to find <span style ="color:#8900D3;">horizontal</span> displacement. This will not always be necessary, depending on the question.<br />
 
 </ul>
 
 <p>A pitcher throws a ball with an initial velocity of 40 meters per second, 45 degrees up relative to the ground. If the pitcher is two meters tall, how long will it take for the ball to hit the ground. 
 
-<ul><span style="color:#008800;">1. We know that the angle is 45 degrees, and the net initial velocity is 40 meters per second. Therefore, we can break it up into horizontal and vertical velocity components. Using the equation above, 40 * cos(45) = 21 meters per second horizontally. Likewise, 40 * sin(45) = 21 meters per second vertically.<br /><br />
+<ul><span style="color:#008800;">1. We know that the angle is 45 degrees, and the net initial velocity is 40 meters per second. Therefore, we can break it up into <span style ="color:#8900D3;">horizontal</span> and <span style ="color:#FF8800;">vertical</span> velocity components. Using the equation above, 40 * cos(45) = 21 meters per second <span style ="color:#8900D3;">horizontally</span>. Likewise, 40 * sin(45) = 21 meters per second <span style ="color:#FF8800;">vertically.</span><br /><br />
 
 <img src="images/pmg4.png">
 
-	2. The variabes we have in the vertical direction are initial velocity (21 meters per second), acceleration (-9.8 meters per second squared), and displacement. The question asks when the ball hits the ground, and since the pitcher is 5 feet tall, this will occur when the ball is displaced negative two meters.<br /><br />
-	3. The equation that relates initial velocity, displacement, acceleration, and time is the third equation. Plugging in the values and solving will give you that time = 4.38 seconds. <br /><br />
-	4. Though this question does not ask for it, if you wanted to find horizontal displacement (how far it traveled during its path), you would simply multiply the time by the horizontal velocity. 4.38 x 21 = 92.0 meters.<br />
+	2. The variabes we have in the <span style ="color:#FF8800;">vertical</span> direction are <span style ="color:#FF0000;">initial velocity (21 meters per second), acceleration (-9.8 meters per second squared), and displacement.</span> The question asks when the ball hits the ground, and since the pitcher is 5 feet tall, this will occur when the ball is displaced negative two meters.<br /><br />
+	3. The equation that relates <span style="color:#FF0000;">initial velocity, displacement, acceleration, and time</span> is the third equation. Plugging in the values and solving will give you that time = 4.38 seconds. <br /><br />
+	4. Though this question does not ask for it, if you wanted to find <span style ="color:#8900D3;">horizontal</span> displacement (how far it traveled during its path), you would simply multiply the time by the <span style ="color:#8900D3;">horizontal</span> velocity. <span style="color:#FF0000;">4.38 x 21 = 92.0 meters.</span><br />
 
 </ul></p>
+
+<h2>Quick tips & tricks</h2>
+
+<p>Here are some general rules for projectile motion problems that can cut down on solving time: </p>
+<li>If the projectile will land on the same level it was shot at (not off of a cliff or onto a building), you can assume that the vertical displacement is zero.</li><br />
+<li>You will almost always use the third kinematic equation when solving for time using the vertical components.</li><br />
+<li>If the launch angle is 45 degrees, the horizontal and vertical velocities will equal each other. This is because sin 45 = cos 45</li><br />
+<li>It is far simpler to find displacement in the horizontal direction. Since there is no acceleration in the x direction, the only equation you need to remember is that displacement equals velocity times time.</li><br />
 
 <div id = "blurb">
 <p><i>This interactive program models the flight of a projectile, given a certain initial horizontal and vertical velocity. You can toggle the "trace projectile path" square in the top left corner. You can adjust the horizontal and vertical velocities using the sliders at the bottom.</i></p>
