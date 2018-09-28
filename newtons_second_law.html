@@ -1,2 +1,158 @@
 <!DOCTYPE html>
-<p>Newton's Second Law</p>
+<html>
+<head>
+	<script type="text/javascript" src="libraries/processing.js"></script>
+</head>
+
+<style>
+
+#header {
+	text-align: center;
+	font-family: cursive;
+	color: white;
+	background-color: #070330;
+}
+
+#blurb {
+	background-color: yellow;
+}
+
+#newtons_laws {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #E83C3C;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+	font-family: Helvetica;
+	margin: 40px;
+	text-indent: 50px;
+	font-size: 18px;
+}
+
+body {
+	background-color: #e4f293;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #FFFFFF;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #86F767;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+}
+
+</style>
+
+<body>
+<div id = "header">
+	<h1>Newton's Laws</h1>
+</div>
+
+<p>Last lesson, we talked about what force is, and some types of forces. Newton's First Law states that the velocity of an object will remain unchanged, unless an outside force acts on it. Therefore, since a force causes a change in velocity, a force causes an acceleration. Newton's Second Law tells us how to quantify this acceleration.</p>
+
+</div>
+
+<p>Newton realized that the acceleration due to a force is dependant on two things: that object's <span style ="color:#8900D3;">mass</span>, and the magnitude of the <span style ="color:#FF8800;">force</span> applied on that mass. Let's look at each individually. </p>
+
+<h2><span style="color:#FF8800;">Force applied</span></h2>
+
+
+<div id = "blurb">
+<p><i>This interactive program illustrates <span style="color:#FF0000;">force</span>. <span style="color:#19b73e;">Click on the window</span>, and use the arrow keys to apply a force on the circle. A right arrow means a right force is being applied, an up force means an upward force is being applied, etc.</i></p>
+</div>
+
+<canvas data-processing-sources="widgets/newtons_first_law.pde"></canvas>
+
+<h3>Practice Problems</h3>
+
+<ul>1. You push your friend over. Was this a contact force, or a field force?</ul>
+<ul>2. You let go of an orange, and it falls to the floor. Was this a contact force, or a field force?</ul>
+<ul>3. You rub a balloon on your head, and your hair sticks to the balloon. Is it sticking to your head due to a contact force, or a field force?</ul>
+<ul>4. You blow on a marble, and it rolls slowly. Did you exert a contact or field force on the marble?</ul>
+<ul>5. A meteor is traveling in deep space at 500 meters per second. How fast will it be going in one year?</ul>
+<ul>6. Is it possible for a force to be applied in one direction, while the object moves in the opposite direction?</ul>
+<ul>7. If an 8 newton force is applied on an object with a mass of one kilogram, at what rate will the object accelerate?</ul>
+<ul>8. Is force a vector or a scalar?</ul>
+<ul><i><b>9. (Challenge)</b></i> If a 10 newton force is applied to an object with a mass of one kilogram, how long will it take until that object is traveling at 40 meters per second?</ul>
+
+
+<h3>Practice Answers</h3>
+
+<ul>1. <br />
+	<b>Contact Force<br /></b>
+	You come in contact with the object (your friend), so it is a contact force.
+</ul>
+<ul>2. <br />
+	<b>Field Force<br /></b>
+	Gravity is acting upon the orange, and the force of gravity is a considered a "field force".
+</ul>
+<ul>3. <br />
+	<b>Field Force<br /></b>
+	The balloon sticks to your head due to a difference in electrical charge, which occurred when you rubbed it against your head. Electricity/electromagnetism is considered a field force.
+</ul>
+<ul>4. <br />
+	<b>Contact Force<br /></b>
+	Although you don't directly come into contact with the marble, the air molecules from your breath are responsible for moving it. Your breath is not considered a field. Typically, gravity and electromagnetism will be the only fields you'll have to deal with.
+</ul>
+<ul>5. <br />
+	<b>500 meters per second<br /></b>
+	Newton's first law states that an object in motion will stay in motion, unless acted upon by an outside force. In deep space, the meteor would be free from any forces, like gravity or humans. Thus, its velocity won't change after a year.
+</ul>
+<ul>6. <br />
+	<b>Yes<br /></b>
+	A force only means that a push is being exerted in that direction. It dictates what direction the object is accelerating in. We know objects with positive velocities can have negative accelerations. One exampleis when you throw a ball up. Its velocity may be pointing upwards, but it is accelerating downwards due to gravity.
+</ul>
+
+<ul>7. <br />
+	<b>8 meters per second squared<br /></b>
+	This is the definition of one Newton. One Newton is the force required to accelerate one kilogram at one meter per second squared, so 8 Newtons is the force required to accelerate one kilogram at 8 meters per second squared. 
+</ul>
+<ul>8. <br />
+	<b>Vector<br /></b>
+	Force has a magnitude and a direction, so it is a vector.
+</ul>
+<ul>9. <br />
+	<b>4 seconds<br /></b>
+	Recall that 10 Newtons means that an object with a mass of one kilogram will accelerate at 10 meters per second squared. Thus, at this rate, it will reach 40 seconds after 4 seconds.
+</ul>
+
+<a href="newtons_laws.html"><div id="newtons_laws">
+	<font size="6">Back to Newton's Laws</font>
+	<img src="images/newtons_laws.png">
+</div></a>
+
+</body>
+
+
+</html>
