@@ -1,2 +1,209 @@
 <!DOCTYPE html>
-<p>Newton's Third Law</p>
+<html>
+<head>
+	<script type="text/javascript" src="libraries/processing.js"></script>
+</head>
+
+<style>
+
+#header {
+	text-align: center;
+	font-family: cursive;
+	color: white;
+	background-color: #070330;
+}
+
+#blurb {
+	background-color: yellow;
+}
+
+#newtons_laws {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #E83C3C;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+	font-family: Helvetica;
+	margin: 40px;
+	text-indent: 50px;
+	font-size: 18px;
+}
+
+body {
+	background-color: #e4f293;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #FFFFFF;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #86F767;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+}
+
+</style>
+
+<body>
+<div id = "header">
+	<h1>Newton's Laws</h1>
+</div>
+
+</div>
+
+<h2>Newton's Third Law</h2>
+
+<p>Newton's Third Law states that <b>"Every Action has an Equal and Opposite Reaction"</b></p>
+
+<p></p>
+
+<p>Lets break this down. An action refers to an application of force. If you push a ball, that is an action. When gravity pulls down a skydiver, that is an action. The reaction is essentially the action, but with the objets reversed. If the action is you pushing a ball, the reaction is the ball pushing you.</p>
+
+<p>Have you ever fired a gun? Even if not, you're likely aware that recoil exists. Newton's third law tells us why recoil exists. When the bullet leaves the chamber, you (through the gun) exerted a huge force on the bullet to get it to speed up to high speeds. The reaction is that the bullet exerted a force on you.</p>
+
+<p>The reaction is "equal and opposite", because it is equal in magnitude to the action force, and opposite in direction. If you throw a ball with 15N of force, the ball throws you in the opposite direction with a force of 15N. Even if a bicyclist were to crash into a school bus, she would exert the same force on the bus as the bus exerts on her.</p> 
+
+<img src="images/newtons_third_law1.png">
+
+<img src="images/newtons_third_law2.png">
+
+<img src="images/newtons_third_law3.png">
+
+<h2><span style="color:#FF8800;">Force applied</span></h2>
+
+<p>Question: What happens to the acceleration when we apply different amounts of <span style ="color:#FF8800;">force?</span>
+
+<div id = "blurb">
+<p><i>This interactive program illustrates how acceleration relates to <span style="color:#FF8800;">force</span>. Click on the window, then use the arrow keys to apply a force on the circle. The slider in the top right allows you to adjust the amount of force applied. See how variable amounts of force affect the acceleration.</i></p>
+</div>
+
+<canvas data-processing-sources="widgets/newtons_second_lawF.pde"></canvas>
+
+<p>It seems as if the more <span style ="color:#FF8800;">force</span> applied, the greater the acceleration! Mathematically, we can say that acceleration is propotional to <span style ="color:#FF8800;">force.</span>
+
+<img src="images/newtons_second_law1.png">
+
+<p>Let's say an object accelerates at <b>A</b> meters per second squared when a force <b>F</b> Newtons is applied. That means it will accelerate at <b>2A</b> meters per second squared if a force of <b>2F</b> Newtons is applied. Likewise, it will only accelerate at <b>A/2</b> meters per second squared if a force of <b>F/2</b> Newtons is applied.</span>
+
+<h2><span style="color:#8900D3;">Mass of Object</span></h2>
+
+<p>Question: What happens to the acceleration when we change the <span style ="color:#8900D3;">mass</span> of an object?</p>
+
+<div id = "blurb">
+<p><i>This interactive program illustrates how acceleration relates to <span style="color:#8900D3;">mass</span>. Click on the window, then use the arrow keys to apply a force on the circle. The slider in the top right allows you to adjust the mass of the object. See how variable amounts of mass affect the acceleration.</i></p>
+</div>
+
+<canvas data-processing-sources="widgets/newtons_second_lawD.pde"></canvas>
+
+<p>It seems as if the greater the <span style="color:#8900D3;">mass</span>, the less the acceleration! In other words, as the mass increases, the acceleration decreases. Mathematically, we can say that acceleration is inversely propotional to <span style="color:#8900D3;">mass.</span>
+
+<img src="images/newtons_second_law2.png">
+
+<p>Let's say an object accelerates at <b>A</b> meters per second squared when it has a mass of  <b>M</b> kilograms. That means it will only accelerate at <b>A/2</b> meters per second squared it has a mass of <b>2M</b> kilograms. Likewise, it will accelerate at <b>2A</b> meters per second squared if a it had a mass of <b>M/2</b> kilograms.</span>
+
+<h2>Unifying <span style ="color:#8900D3;">Mass</span> and <span style ="color:#FF8800;">Force</span></span></h2>
+
+<p>We know that <span style ="color:#FF8800;">force</span> is directly proportional to acceleration, and that <span style="color:#8900D3;">mass</span>, is inversely proporitional to acceleration. We can combine these two statements to say that acceleration is <i>equal</i> to the force applied, divided by the total mass.
+
+</p>
+
+<img src="images/newtons_second_law1.png">
+
+<img src="images/newtons_second_law2.png">
+
+<img src="images/newtons_second_law3.png">
+
+<p>Think about it realistically. If you push something harder, it will move faster. If you push something that's heavy, it will move slowly.</p>
+
+
+
+<h3>Practice Problems</h3>
+
+<ul>1. A 7 Newton force is applied to a 3 kg object. How fast will that object accelerate?</ul>
+<ul>2. An object accelerates at 12 meters per second squared when a 20N force is applied.  What was the object's mass?</ul>
+<ul>3. An olympic weightlifter wants to accelerate a 400kg dumbbell upwards at 2 meters per second squared. What force does he need to exert on the dumbbell?</ul>
+<ul>4. The human cranium suffers a traumatic injury if a 1400N force is applied. Two people get into a fight, and one punches the other person's head. If the head weighs 5kg, what is the minimum acceleration of the head jerking back in which the cranium would sustain a traumatic injury?</ul>
+<ul>5. A 1000kg car, initially going at 40 meters per second skids to a complete stop in 5 seconds. Assuming constant deceleration, what is the force applied on the car while the car is slowing down?</ul>
+<ul>6. A 5kg ball is rolling at 5 meters per second to the right, until a 10N force is applied to the left for 4 seconds. Afterwards, what is the speed and direction in whih the ball is rolling.</ul>
+<ul><i><b>7. (Challenge)</b></i> An 800g javelin is thrown in a parabolic trajectory, at 30 degrees above the horizontal (ground). If the javelin is in contact with the human's hand for half of a second, what is the average force applied on the javelin if it travels 80 meters?</ul>
+
+
+<h3>Practice Answers</h3>
+
+<ul>1. <br />
+	<b>2.33 meters per second squared<br /></b>
+	Simply divide 7N by 3kg to find the acceleration, as stated by Newton's second law.
+</ul>
+<ul>2. <br />
+	<b>1.66kg<br /></b>
+	Rearrange the equation to solve for mass. Divide force by acceleration.
+</ul>
+<ul>3. <br />
+	<b>800N<br /></b>
+	Rearrange the equation to solve for force. This is where the famous "F = ma" comes in.
+</ul>
+<ul>4. <br />
+	<b>280 meters per second squared<br /></b>
+	The minimum force to sustain a traumatic injury is 1400N, meaning we should consider this as the force. The mass of the head is 5kg, so we simply divide to find the acceleration. If this seems like alot, remember that it's the acceleration, not the velocity. Your head never travels at 280 meters per second, it just accelerates when the fist is in contact, which is only for a fraction of a second. Also, your head is attatched to your body (hopefully), so while your head would initially accelerate that fast, your body would keep your head from flying off.
+</ul>
+<ul>5. <br />
+	<b>8000N<br /></b>
+	If a car experiences a change in velocity of 40 meters per second over 5 seconds, then it has an average acceleration of 8 meters per second squared. Now, we solve for the force using F = ma.
+</ul>
+<ul>6. <br />
+	<b>3 meters per second to the left<br /></b>
+	A leftward 10N force is applied on a 5kg ball, so its resultant acceleration is 2 meters per second left. The force is applied for 4 seconds, so the change in velocity is 8 meters per second to the left (from v = at). Since the ball starts out going 5 meters per second to the right, and has a change in 8 meters per second to the left, it ends up going 3 meters per second to the left. (5 - 8 = -3)
+</ul>
+
+<ul>7. <br />
+	<b>48.2N<br /></b>
+	We know the mass of the javelin, so we could solve for the force if only we knew the acceleration! Well, we know that the acceleration will equal the change in velocity of the javelin, divided by the time taken to throw it, because acceleration is how velocity changes with respect to time. We already know that the javelin is in contact with the hand for half of a second, so we just need to know the velocity of the javelin right as it leaves the hand. To solve this, we need kinematics. Set up a diagram.
+
+	<img src="images/newtons_second_law5.png">
+
+	<p>Now this is a kinematics problem. Split the problem up into kinematics in the y direction, and kinematics in the x direction.</p>
+
+	<img src="images/newtons_second_law6.png">
+
+	<p>Since the velocity of the javelin started at zero, the change in velocity is just the final velocity, or 30.1 meters per second. Since the javelin was in contact with the hand for just half of a second, that means that the acceleration was 60.2 meters per second. Finally, we know the acceleration, and can calculate the force. F = ma, so F = (60.2)*(.8) = 48.2N. We use .8 instead of 800, because the mass needs to be in kilograms.</p>
+</ul>
+
+<a href="newtons_laws.html"><div id="newtons_laws">
+	<font size="6">Back to Newton's Laws</font>
+	<img src="images/newtons_laws.png">
+</div></a>
+
+</body>
+
+
+</html>
