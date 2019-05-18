@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="libraries/processing.js"></script>
+</head>
+
+<style>
+
+#header {
+	text-align: center;
+	font-family: cursive;
+	color: white;
+	background-color: #070330;
+}
+
+#blurb {
+	background-color: yellow;
+}
+
+#newtons_laws {
+	width: 300px;
+	height: 220px;
+	font-family: Gill Sans;
+	text-align: center;
+	background-color: #E83C3C;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+	font-family: Helvetica;
+	margin: 40px;
+	text-indent: 50px;
+	font-size: 18px;
+}
+
+body {
+	background-color: #e4f293;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #FFFFFF;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+	background-color: #86F767;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+}
+
+</style>
+
+<body>
+<div id = "header">
+	<h1>Newton's Laws</h1>
+</div>
+
+</div>
+
+<h2>Newton's Law of Gravitation</h2>
+
+<p>One of the most famous stories in physics is that of the apple that fell on Sir Isaac Newton's Head. It is said that getting hit prompted Newton to contemplate why things fall down, and not up. <span style = "color:#3300EE;"><b>Newton postulated that between any objects with mass, there exist a force between them, called gravity. This force points in the direction of the other object's center of mass.</b></span> Newton sought to quantify this relationship.</p>
+
+<img src="images/gravitation1.png">
+
+<p>Let's say we have two small rubber balls. Newton's law would imply that there is a force between them simply because they have mass, <span style = "color:#FF0000;">so why don't we see them accelerating towards each other?</span> It is very important to remember this: the force of gravity is <b><i>extremely weak.</i></b> There is a force acting between them, but it is negligible compared to the other forces acting on the objects, such as air resistance, friction, or the gravity from earth.</p>
+
+<p>Newton found that the force of gravity <span style = "color:#008800;">increases the more massive the objects,</span> and <span style = "color:#0000FF;">decreases the farther away the objects are from each other.</span> This is why something small like a ball won't be visibly attracted to another ball, but two large objects like two stars are attracted to each other. Specifically, the force is <b>directly proportional</b> to the product of the two masses, and the force is <b>inversely propotional</b> to the <b>square</b> of the distance between the objects. For example, if the mass of one object doubles while the mass of the other object stays the same, the total force doubles. If both masses double, then the total force quadruples. If the distance between the objects double, the force decreases by a factor of four.</p>
+
+<p><span style = "color:#3300EE;"><b>If both the masses and the distance change between the objects, simply combine their effects to find the net change in force.</b></span> For example, if both <b>masses double</b> and the <b>distance halves</b>, the total force <b>quadruples from the mass change</b>, and <b>quadruples again from the distance change.</b> <span style = "color:#008800;"><b>The net effect is that the force is 16x stronger than it was before, since 4 x 4 = 16.</p></b></span>
+
+<p>However, while this explains how the force changes when we change the masses and distances between objects, <span style = "color:#3300EE;"><b>it assumes that we already know the force between them in the original scenario.</b></span> This is not a useful equation to have when we have two objects of known masses and distances and want to figure out the exact force between them. To find this, we simply multiply the proportionality equation from before by a constant, called <b>"G."</b> G is just some number that was found through years of experimentation. <br /><br /><b>G is approximately equal to 6.673 x 10^-11 (Nm^2)/(kg)^2.</b> The reason it has such wacky units attatched are simply so that when multiplied by a mass value twice and divided by the square of a distance, the final unit will be in Newtons, the unit of force. This is clever, since we want to end up with just the force.</p>
+
+<img src="images/gravitation2.png">
+
+<p></p>
+
+
+<div id = "blurb">
+<p><i>This interactive program illustrates <span style = "color:#FF0000;">Newton's Law of Gravitation.</span> Click on the window, then press play to see the "stars" move towards each other. To adjust where each star starts off, click the middle of the star, and drag it. To adjust the size of a star, click on the black rim, and drag in or out. To give each star an initial velocity, right click the middle of the star, and drag out the velocity vector in the direction you want the star to move. The farther out you draw the vector, the greater the magnitude of the initial velocity will be.</i></p>
+</div>
+
+<canvas data-processing-sources="widgets/mworld.pde"></canvas>
+
+<h3>Practice Problems</h3>
+
+<ul>1. When you jump, your action is exerting a force on the ground. What is the reaction force? What is the magnitude of the reaction force?</ul>
+<ul>2. A small car crashes into a stationary semitruck. The semitruck is four times as massive as the small. If the small car applies a 15,000N force on the semitruck, what is the magnitude and direction of the force that the semitruck applies on the small car?</ul>
+<ul>3. A massive football player body slams a small, unsuspecting man. The football player is twice as massive as the smaller man. How does the resultant acceleration of the football player compare to the man?</ul>
+<ul>4. If a 50kg parachuter is free falling on earth, what is the force that the man exerts on the earth?</ul>
+<ul>5. A baseball player swings at the baseball, and the ball accelerates away at 40 meters per second squared. What is the backwards acceleration of the bat? Assume the baseball weighs 145 grams, and the bat weights one kilogram.</ul>
+
+
+<h3>Practice Answers</h3>
+
+<ul>1. <br />
+	<b>Reaction force: "the ground exerting a force on you"<br /></b>
+	<b>Magnitude: Equal to the magnitude of the force you exert on the ground<br /></b>
+</ul>
+<ul>2. <br />
+	<b>15,000N<br /></b>
+	Newton's third law tells us that the reaction force is always equal to the action force.
+</ul>
+<ul>3. <br />
+	<b>Half of that of the smaller man<br /></b>
+	The same force "F" will be applied to each person. If we take the football player's mass to be M, and the smaller man's mass to be M/2, then their respective accelerations are A, and 2A.
+</ul>
+<ul>4. <br />
+	<b>490N<br /></b>
+	We want to know the force that the <b><span style = "color:#0000FF;">man</span> exerts on the <span style = "color:#FF0000;">earth.</span></b> Since the man is freefalling, we know that his acceleration is 9.8 meters per second squared. From Newton's Second Law, we know that the force the <b><span style = "color:#FF0000;">earth</span> exerts on the <span style = "color:#0000FF;">man</span></b> is equal to his mass times his acceleration, or 490N. Newton's Third Law tells us that the force the <b><span style = "color:#FF0000;">earth</span> exerts on the <span style = "color:#0000FF;">man</span></b> is equal to force the <b><span style = "color:#0000FF;">man</span> exerts on the <span style = "color:#FF0000;">earth.</span></b>
+</ul>
+<ul>5. <br />
+	<b>5.8 meters per second squared<br /></b>
+	We want to find the acceleration of the bat, so first, we should find the force exerted on the bat. Newton's third law states that the force of the ball on the bat is the same as the force of the bat on the ball. Thus, we should find the force applied to the ball. Newton's second law tells us that this is equal to the mass of the baseball times its acceleration, or (.145) * 40 = 5.8N. Since 5.8 Newtons are applied to the ball, 5.8 Newtons are applied to the bat. Using Newton's second law, we can solve for the acceleration of the bat, since we have its mass and force.
+</ul>
+
+<a href="newtons_laws.html"><div id="newtons_laws">
+	<font size="6">Back to Newton's Laws</font>
+	<img src="images/newtons_laws.png">
+</div></a>
+
+</body>
+
+
+</html>
