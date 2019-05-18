@@ -1,3 +1,71 @@
+/* @pjs preload="data/fonts/arcade.ttf"; */
+/* @pjs preload="data/fonts/haike.ttf"; */
+/* @pjs preload="data/fonts/monsterfriend.ttf"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft00.png"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft01.png"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft02.png"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft03.png"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft04.png"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft05.png"; */
+/* @pjs preload="data/images/crocodoomerLeft/crocodoomerLeft06.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight00.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight01.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight02.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight03.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight04.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight05.png"; */
+/* @pjs preload="data/images/crocodoomerRight/crocodoomerRight06.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground00.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground01.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground02.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground03.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground04.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground05.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground06.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground07.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground08.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground09.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground10.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground11.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground12.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground13.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground14.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground15.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground16.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground17.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground18.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground19.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground20.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground21.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground22.png"; */
+/* @pjs preload="data/images/fightBackground/fightBackground23.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft00.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft01.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft02.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft03.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft04.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft05.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft06.png"; */
+/* @pjs preload="data/images/lunetterLeft/lunetterLeft07.png"; */
+/* @pjs preload="data/images/marioRight/marioRight00.png"; */
+/* @pjs preload="data/images/marioRight/marioRight01.png"; */
+/* @pjs preload="data/images/marioRight/marioRight02.png"; */
+/* @pjs preload="data/images/marioRight/marioRight03.png"; */
+/* @pjs preload="data/images/marioRight/marioRight04.png"; */
+/* @pjs preload="data/images/marioRight/marioRight05.png"; */
+/* @pjs preload="data/images/marioRight/marioRight06.png"; */
+/* @pjs preload="data/images/marioRight/marioRight07.png"; */
+/* @pjs preload="data/images/shield.png"; */
+/* @pjs preload="data/images/sigil.png"; */
+/* @pjs preload="data/patchNotes.txt"; */
+/* @pjs preload="data/reset.txt"; */
+/* @pjs preload="data/saveData.txt"; */
+/* @pjs preload="data/sound/fightSong.mp3"; */
+/* @pjs preload="data/sound/hit.mp3"; */
+
+
+
+
 class Save {
   int n; //index of actual number within a line
   String line; //stores each line
