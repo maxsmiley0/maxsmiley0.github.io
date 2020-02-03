@@ -1,0 +1,2 @@
+index 0: playerX = 248
+index 1: playerY = 323
