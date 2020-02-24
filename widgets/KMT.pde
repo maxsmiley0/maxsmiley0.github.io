@@ -19,6 +19,7 @@ float runtime;
 
 public void draw()
 {
+  frameRate(600);
   background(#FFFFFF);
   fill(#FFCC99); 
   rect(350, 350, boxWidth, boxHeight);
@@ -30,12 +31,19 @@ public void draw()
     molecule[i].move();
   }
   
-  text("Collisions: " + collisions + "\nBox Width: " + boxWidth, 55, 23);
+  text("Collisions: " + collisions + "\nBox Area: " + (int)(boxWidth*boxHeight) , 55, 23);
   text("Pressure : " + (int)(100*collisions/runtime)/100.0, 255, 23);
   
   if (mousePressed)
   {
-    boxWidth --;
+    if (mouseButton == LEFT)
+    {
+      boxWidth --;
+    }
+    else if (mouseButton == RIGHT)
+    {
+      boxWidth++;
+    }
     /*for (int i = 0; i < molecule.length; i++)
      {
        molecule[i].changeSpeed(1.01);
@@ -45,7 +53,6 @@ public void draw()
      
      for (int i = 0; i < molecule.length; i++)
      {
-       molecule[i].setPosition(350, 350);
        runtime = 1;
        collisions = 0;
      }
@@ -59,7 +66,6 @@ Loses Kinetic Energy when colliding with walls
 Loses Kinetic Energy when colliding with other particles
 Attractive forces
 */
-
 
 class Molecule
 {
@@ -77,21 +83,37 @@ class Molecule
   public void draw()
   {
     fill(#000000);
-    ellipse(displacement.x, displacement.y, moleculeSize, moleculeSize);
+    ellipse(displacement.x, displacement.y, moleculeSize, moleculeSize); 
   }
   
   public void move()
   {
+    if (displacement.x <= 350 - boxWidth/2)
+    {
+      displacement.x += 2;
+    }
+    else if (displacement.x >= 350 + boxWidth/2)
+    {
+      displacement.x -= 2;
+    }
+    
     displacement.add(velocity);
     if (displacement.x < 350 - boxWidth/2 - velocity.x)
     {
       velocity.x *= -1;
       collisions++;
+      if (mousePressed)
+      {
+        velocity.x++;
+      }
     }
     else if (displacement.x > 350 + boxWidth/2 - velocity.x)
     {
       velocity.x *= -1;
-      collisions++;
+      collisions++; if (mousePressed)
+      {
+        velocity.x--;
+      }
     }
     if (displacement.y > 350 + boxHeight/2 - velocity.y)
     {
@@ -113,5 +135,9 @@ class Molecule
   public void changeSpeed(float del)
   {
     velocity.mult(del);
+  }
+  public float getXVel()
+  {
+    return velocity.x;
   }
 }
