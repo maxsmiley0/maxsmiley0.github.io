@@ -1,4 +1,4 @@
-Molecule[] molecule = new Molecule[400];
+Molecule[] molecule = new Molecule[200];
 
 public void setup() 
 { 
@@ -71,7 +71,7 @@ class Molecule
 {
   private int moleculeSize = 2;
   private float randAngle = random(0, 2*PI);
-  private float speed = randomGaussian() + 4;
+  private float speed = randomGaussian()*.5 + 2;
   private PVector displacement = new PVector(random(350 - boxWidth/2, 350 + boxWidth/2), random(350 - boxHeight/2, 350 + boxHeight/2));
   private PVector velocity = new PVector(speed*cos(randAngle), speed*sin(randAngle));
   
